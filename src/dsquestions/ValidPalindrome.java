@@ -1,4 +1,4 @@
-package demo;
+package dsquestions;
 
 public class ValidPalindrome {
 
