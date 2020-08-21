@@ -16,8 +16,8 @@ public class GoatLatin {
 				result = result.append(temp[i]).append("ma").append(sa.toString()).append(" ");
 				sa.append("a");
 			} else {
-				result = result.append(temp[i].substring(1)).append(temp[i].charAt(0)).append("ma").append(sa.toString())
-						.append(" ");
+				result = result.append(temp[i].substring(1)).append(temp[i].charAt(0)).append("ma")
+						.append(sa.toString()).append(" ");
 				sa.append("a");
 			}
 		}
@@ -27,9 +27,7 @@ public class GoatLatin {
 
 	private static boolean isVowel(char ch) {
 		ch = Character.toLowerCase(ch);
-		if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
-			return true;
-		return false;
+		return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
 	}
 
 	public static void main(String[] args) {
