@@ -10,7 +10,7 @@ public class PancakeSorting {
 
 		int len = A.length;
 		List<Integer> result = new ArrayList<>();
-		for (int i = len; i > 1; --i) {
+		for (int i = len; i > 1; i--) {
 			int maxIndex = findMax(A, i);
 			if (maxIndex != i - 1) {
 				result.add(maxIndex + 1);
@@ -37,7 +37,7 @@ public class PancakeSorting {
 
 	private static int findMax(int arr[], int n) {
 		int index = 0;
-		for (int i = 1; i < n; ++i)
+		for (int i = 1; i < n; i++)
 			if (arr[i] > arr[index])
 				index = i;
 		return index;
