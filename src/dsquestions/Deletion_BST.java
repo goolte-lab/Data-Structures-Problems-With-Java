@@ -45,7 +45,7 @@ public class Deletion_BST {
 
 	}
 
-	private static void display(TreeNode root) {
+	private static void printTree(TreeNode root) {
 		if (root.left != null) {
 			System.out.print(root.left.val + "-->");
 		} else {
@@ -61,11 +61,11 @@ public class Deletion_BST {
 		System.out.println();
 
 		if (root.left != null) {
-			display(root.left);
+			printTree(root.left);
 		}
 
 		if (root.right != null) {
-			display(root.right);
+			printTree(root.right);
 		}
 	}
 
@@ -77,14 +77,14 @@ public class Deletion_BST {
 		tree.root.left.left = tree.new TreeNode(2);
 		tree.root.left.right = tree.new TreeNode(4);
 		tree.root.right.right = tree.new TreeNode(7);
-		
+
 		System.out.println("Before Deletion:");
-		display(tree.root);
-		
+		printTree(tree.root);
+
 		deleteNode(tree.root, 3);
-		
+
 		System.out.println("After Deletion:");
-		display(tree.root);
+		printTree(tree.root);
 
 	}
 
