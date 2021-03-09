@@ -13,6 +13,7 @@ public class ReverseDigits {
 
 	public static void main(String[] args) {
 		System.err.println(reverse(1534236469));
+		System.err.println(reverse(123));
 
 	}
 
