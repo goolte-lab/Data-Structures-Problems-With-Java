@@ -1,7 +1,7 @@
 package dsquestions;
 
 public class ReverseDigits {
-	public static int reverse(int x) {
+	private static int reverse(int x) {
 		long reversed = 0;
 		while (x != 0) {
 			int digit = x % 10;
